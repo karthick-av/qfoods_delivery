@@ -52,6 +52,7 @@ super.initState();
   }
 
 Future<void> getOrderHandler() async{
+ //final orderProvider = Provider.of<OrdersProvider>(context, listen: false);
    setState(() {
     loading = true;
   });
@@ -66,6 +67,8 @@ Future<void> getOrderHandler() async{
 
        order = __order;
        setState(() {});
+ //       orderProvider.RestaurantOrderStatusChanger(__order);
+       
     }
   }catch(e){
  

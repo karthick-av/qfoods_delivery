@@ -1,16 +1,16 @@
 
 class ApiServices{
   ApiServices._();  
-    static  const BASEURL = "https://qfoods-server.onrender.com/";
+    static  const BASEURL = "http://192.168.10.5:1999/";
      static const SOCKET_RECENT_ORDER_URL = "${BASEURL}recentorder";
 
    static const login = "${BASEURL}delivery/user/login";  
 
    static const restaurant_recent_orders = "${BASEURL}delivery/orders/restaurant/recent";
 
-   static const get_order = "${BASEURL}user/order/getorder/";
+   static const get_order = "${BASEURL}delivery/orders/restaurant/order/";
   
-   static const get_grocery_order = "${BASEURL}user/order/grocery/getorder/";
+   static const get_grocery_order = "${BASEURL}delivery/orders/grocery/order/";
    static const accept_restaurant_order = "${BASEURL}delivery/orders/restaurant/accept";
 
  static const update_status_order = "${BASEURL}delivery/orders/restaurant/updateorder";

@@ -40,6 +40,7 @@ super.initState();
   }
 
 Future<void> getOrderHandler() async{
+ // final orderProvider = Provider.of<OrdersProvider>(context, listen: false);
    setState(() {
     loading = true;
   });
@@ -52,6 +53,7 @@ Future<void> getOrderHandler() async{
        var response_body = json.decode(response.body);
        GroceryOrderModel __order = GroceryOrderModel.fromJson(response_body);
 
+   //      orderProvider.GroceryOrderStatusChanger(__order);
        order = __order;
        setState(() {});
     }
